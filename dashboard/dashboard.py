@@ -67,7 +67,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-all_df_data = pd.read_csv("dashboard/main_data.csv")
+all_df_data = pd.read_csv("/dashboard/main_data.csv")
 
 # Calculate total payments by payment type
 total_payments_by_type = all_df_data.groupby('payment_type')['payment_value'].sum().sort_values(ascending=False)
